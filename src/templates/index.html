@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Resto Idol catalogue for you" />
+
+    <meta name="theme-color" content="#909090" />
+    <link rel="icon" href="./cutlery.png" />
+    <link rel="manifest" href="app.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+    <title>Katalog Restoran</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#maincontent" class="skip-link" tabindex="0">Skip ke konten</a>
+      <div class="navbar__menu">
+        <button aria-label="Hamburger Button" id="hamburgerButton">☰</button>
+      </div>
+      <div class="navbar__brand">
+        <div class="navbar__brand">
+          <h1><i class="fa fa-cutlery"></i> Resto Idol</h1>
+        </div>
+      </div>
+      <nav id="navigationDrawer" class="navbar__navigation">
+        <ul>
+          <li><a href="#/home">Home</a></li>
+          <li><a href="#/favorite">Favorite</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/rafinovranza29/">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <picture>
+        <source media="(max-width: 600px)" scrset="/images/heros/hero-image_2-small.jpg">
+        <img srcset='/images/heros/hero-image_2-large.jpg' 
+              alt="Makanan di meja">
+      </picture>
+      <div class="heroinner">
+        <h1 class="herotitle">Resto Idol</h1>
+        <p class="herosubtitle">Presents a restaurant paradise on earth.</p>
+      </div>
+    </section>    
+
+    <main id="maincontent" tabindex="0"></main>
+    <footer>Copyright © 2023 - <strong>RestoIdol</strong></footer>
+  </body>
+</html>

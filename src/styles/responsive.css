@@ -1,0 +1,89 @@
+@media screen and (min-width: 450px) {
+  .restaurant .restaurant__name {
+    text-align: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .restaurant .restaurant__description h3 {
+    text-align: center;
+  }
+
+  .restaurant .restaurant__info {
+    text-align: center;
+  }
+
+  .restaurant .restaurant__poster {
+    width: 100%;
+    max-width: 400px;
+    justify-self: center;
+  }
+
+}
+
+@media only screen and (min-width: 650px) {
+  .navbar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }
+
+  .navbar .navbar__brand h1 {
+    font-size: 1.5em;
+  }
+
+  .navbar .navbar__menu {
+    display: none;
+  }
+
+  .navbar .navbar__navigation {
+    position: static;
+    width: 100%;
+  }
+
+  .navbar .navbar__navigation ul li {
+    display: inline-block;
+  }
+
+  .navbar .navbar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .restaurant {
+    grid-template-columns: auto 1fr;
+  }
+
+  .restaurant .restaurant__name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .restaurant .restaurant__description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .restaurant .restaurant__description h3 {
+    text-align: center;
+  }
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+  .restaurants {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+    

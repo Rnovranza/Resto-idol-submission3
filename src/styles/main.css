@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background-color: orange;
+  color: white;
+  padding: 20px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+img {
+  display: block;
+}
+
+.navbar {
+  padding: 8px 16px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar .navbar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar__menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.navbar .navbar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__brand h1 i {
+  color: black; 
+  font-size: 24px; 
+}
+
+
+.navbar .navbar__brand h1 {
+  color: #141414;
+  text-transform: uppercase;
+  font-size: 22px;
+  user-select: none;
+}
+
+.navbar .navbar__navigation {
+  position: absolute;
+  top: 50px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar .navbar__navigation.open {
+  left: 0;
+}
+
+.navbar .navbar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.hero {
+	display: flex;
+	height: 325px;
+	align-items: center;
+	text-align: left;
+	overflow: hidden;
+	background-position: center;
+	background-color: Black;
+}
+
+.hero picture {
+	filter: brightness(60%);
+	height: 325px;
+	width: 100%;
+	background-size: cover;
+	object-fit: cover;
+	object-position: center;
+}
+
+.hero picture img,
+.hero picture source {
+	height: 325px;
+	width: 100%;
+  background-size: cover;
+	object-fit: cover;
+	object-position: center;
+}
+
+.heroinner {
+	position: absolute;
+	margin-left: 5rem;
+	max-width: 800px;
+}
+
+.herotitle {
+	color: #fff;
+	font-weight: 600;
+	font-size: 36px;
+	text-shadow: 1px 1px #141414;
+}
+
+.herosubtitle {
+	color: #fff;
+	margin-top: 16px;
+	font-size: 18px;
+	font-weight: 600;
+	text-shadow: 1px 1px #141414;
+}
+
+.content {
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.content .content__heading {
+  text-align: center;
+  margin-bottom: 25px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 16px 0px 0px 0px;
+}
+
+.restaurants {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.restaurant {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+}
+
+.restaurant .restaurant__poster {
+  width: 100%;
+  max-width: 400px;
+}
+
+.restaurant .restaurant__info h4 {
+  margin: 8px 0;
+}
+
+.restaurant-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.restaurant-item__header {
+  position: relative;
+}
+
+.restaurant-item .restaurant-item__header .restaurant-item__header__poster {
+  width: 100%;
+}
+
+.restaurant-item .restaurant-item__header .restaurant-item__header__rating {
+  position: absolute;
+  padding: 10px;
+  bottom: 20px;
+  left: 0;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+.restaurant-item
+  .restaurant-item__header
+  .restaurant-item__header__rating
+  .restaurant-item__header__rating__score {
+  margin-left: 10px;
+}
+
+.restaurant-item .restaurant-item__content {
+  padding: 16px;
+}
+
+.restaurant-item .restaurant-item__content h3 {
+  margin: 0 0 10px 0;
+}
+
+.restaurant-item .restaurant-item__content h3 a {
+  color: #db0000;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+}
+
+.restaurant-item .restaurant-item__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.restaurant .restaurant__description p{
+  text-align: center;
+}
+
+
+.like {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #db0000;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  padding: 15px;
+  background-color: gray;
+  text-align: center;
+}
